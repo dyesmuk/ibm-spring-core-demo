@@ -11,10 +11,14 @@ import com.ibm.demo.annotationbased.model.Employee;
 //@ComponentScan(basePackageClasses = )
 @ComponentScan
 public class App {
+
 	public static void main(String[] args) {
 		System.out.println("Start");
 		ApplicationContext context = new AnnotationConfigApplicationContext(App.class);
-		Employee emp1 = context.getBean(Employee.class);
+		Employee emp1 = 
+//				 new Employee();
+//				 null;
+				context.getBean(Employee.class);
 		System.out.println(emp1.toString());
 		System.out.println("End");
 		((AbstractApplicationContext) context).close();

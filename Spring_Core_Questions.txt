@@ -1,0 +1,63 @@
+SPRING CORE — TRAINEE ASSESSMENT QUESTIONS
+
+
+SECTION 1: BASIC UNDERSTANDING
+
+Q1.  What problem does the Spring Framework solve that plain Java doesn't handle well?
+
+Q2.  What does IoC stand for, and in one line, what does it mean?
+
+Q3.  What is a Spring Bean?
+
+Q4.  What is the difference between BeanFactory and ApplicationContext? Which should you prefer?
+
+Q5.  In EMS, if EmployeeService needs a Department object — how does Spring change the
+     approach vs plain Java?
+
+
+SECTION 2: CORE CONCEPTS — DI MECHANISMS
+
+Q6.  What are the three ways to inject a dependency in Spring?
+
+Q7.  When would you use constructor injection over setter injection?
+
+Q8.  What is the difference between "value" and "ref" in XML bean configuration?
+
+Q9.  If two beans of the same type exist and you use @Autowired, what happens?
+     How do you fix it?
+
+Q10. What does @Qualifier do, and when do you need it?
+
+
+SECTION 3: HANDS-ON / CODE LEVEL
+
+Q11. Write the XML snippet to define a Department bean with name="IT" and location="Bangalore".
+
+Q12. Which annotation marks a service layer bean? A DAO layer bean?
+     Why not just use @Component everywhere?
+
+Q13. What does @PostConstruct do? Where in the lifecycle is it called?
+
+Q14. If a bean has scope="prototype", what is different from the default?
+
+Q15. What is an inner bean in XML config? Can it be reused by other beans?
+
+
+SECTION 4: SCENARIO-BASED / THINK DEEPER
+
+Q16. You have EmailNotificationService and SmsNotificationService both implementing
+     NotificationService. How do you wire one cleanly?
+
+Q17. Why is it good practice to inject an interface rather than a concrete class?
+     How does Spring support this?
+
+Q18. XML config vs Java config vs annotation config — what's the difference and
+     when do you use each?
+
+Q19. Can Spring resolve a circular dependency with constructor injection?
+     What about setter injection?
+
+Q20. A maxConnections value differs between dev and prod. How do you handle this
+     without changing Java code?
+
+

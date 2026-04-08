@@ -17,8 +17,8 @@ public class App {
 		ApplicationContext context = new AnnotationConfigApplicationContext(App.class);
 		Employee emp1 = 
 //				 new Employee();
-//				 null;
-				context.getBean(Employee.class);
+				 null;
+//				context.getBean(Employee.class);
 		System.out.println(emp1.toString());
 		System.out.println("End");
 		((AbstractApplicationContext) context).close();
